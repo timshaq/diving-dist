@@ -12,3 +12,4 @@
 01. [Попап. Отзыв](https://timshaq.github.io/diving-dist/popup__review.html)
 01. [Попап. Отзыв. Ошибка](https://timshaq.github.io/diving-dist/popup__review-fail.html)
 01. [Попап. Отзыв. Успех](https://timshaq.github.io/diving-dist/popup__review-success.html)
+01. [Главная (в процессе)](https://timshaq.github.io/diving-dist/index.html)
