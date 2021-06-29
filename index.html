@@ -11,14 +11,21 @@
 
 <body id="body">
 
-<header class="header" id="header">
+<header class="header header-transparent" id="header">
 	<div class="header__fix-box fix-box">
 		<button class="header__burger" id="burgerBtn">
 			<img src="assets/img/burger.svg" alt="" class="header__burger-icon">
+
+			<img src="assets/img/burger-white.svg" alt="" class="header__burger-icon burger-transparent">
 		</button>
 		<div class="header__logo-box">
+			<img src="assets/img/logo-white.svg" alt="" class="header__logo logo-tab logo-transparent">
+
 			<img src="assets/img/logo-blue.svg" alt="" class="header__logo logo-tab">
+
 			<img src="assets/img/header-logo-mob.svg" alt="" class="header__logo logo-mob">
+
+			<img src="assets/img/logo-white.svg" alt="" class="header__logo logo-mob logo-transparent">
 		</div>
 		<nav class="header__nav">
 			<ul class="header__nav-ul">
@@ -46,9 +53,15 @@
 		</nav>
 		<div class="header__tel">
 			<a href="#" class="header__tel-link">
+
 				<img src="assets/img/header__pc-tel.svg" alt="" class="header__tel-link-icon logo-pc">
+
+				<img src="assets/img/header__pc-tel-white.svg" alt="" class="header__tel-link-icon logo-pc tel-link-icon-transparent">
 				
 				<img src="assets/img/header-tel-link-blue.svg" alt="" class="header__tel-link-icon logo-mob">
+				
+				<img src="assets/img/header-tel-link-tab-white.svg" alt="" class="header__tel-link-icon logo-mob tel-link-icon-transparent">
+
 				<span class="header__tel-link-text">
 					7 (928) 205-57-14
 				</span>
@@ -124,20 +137,71 @@
 
 <main>
 
-<h1 class="hidden page-title">
-	Главная
-</h1>
-
 <div class="index">
 
-<section class="index__train index-train">
+<section class="index__hero index-hero" id="indexHeroParallax">
+	<div class="index-hero__bg-box">
+		<div class="index-hero__fish-left-box" id="indexHeroFishLeft">
+			<img src="assets/img/fish-left__768h.png" alt="" class="index-hero__fish-left-768">
+		</div>
+		<div class="index-hero__diver-box" id="indexHeroDiver">
+			<img src="assets/img/diver__768h.png" alt="" class="index-hero__diver-768">
+		</div>
+		<div class="index-hero__fish-right-box" id="indexHeroFishRight">
+			<img src="assets/img/fish-right__768h.png" alt="" class="index-hero__fish-right-768">
+		</div>
+	</div>
+	<div class="index-hero__fix-box fix-box">
+		<h1 class="index-hero__title">
+			Дайвинг клуб
+		</h1>
+		<h2 class="index-hero__subtitle">
+			Современный дайвинг клуб в Геленджике!
+		</h2>
+		<button class="index-hero__btn btn btn-white">
+			Онлайн запись
+		</button>
+		<a href="#" class="index-hero__whatsapp">
+			<img src="assets/img/wh-white.svg" alt="" class="index-hero__wh-icon">
+		</a>
+	</div>
+</section>
+
+<section class="index__about index-about index__section">
+	<div class="index-about__fix-box fix-box">
+
+		<div class="about-hero__item about-hero-item">
+			<div class="about-hero-item__ph-box">
+				<img src="assets/img/about-hero-ph__01.png" alt="" class="about-hero-item__ph">
+				<img src="assets/img/about-hero-icon__01.png" alt="" class="about-hero-item__icon">
+			</div>
+			<div class="about-hero-item__text">
+				<h2 class="about-hero-item__title">
+					Дайвинг клуб “Название”
+				</h2>
+				<p class="about-hero-item__p">
+					Мы рады приветствовать вас на нашем сайте! Если вы новичок и желаете получить квалификацию дайвера, если вы сертифицированный дайвер и желаете повысить свой уровень или просто качественно понырять, или же вы хотите попробовать и опасаетесь, то вы по адресу!
+				</p>
+				<p class="about-hero-item__p">
+					Покоряйте глубины с нами! Квалифицированные инструкторы PADI и IANTD с богатым опытом погружений, подробно и терпеливо расскажут вам все, что нужно знать дайверу, обучат необходимым навыкам и поделятся секретами своего мастерства.
+				</p>
+				<button class="index-about__link btn btn-blue">
+					Подробнее
+				</button>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section class="index__train index-train index__section" id="indexTrain">
 	<div class="index-train__fix-box fix-box">
 		<div class="title-page">
 			<h2 class="title-page__title">
 				Обучение
 			</h2>
 			<div class="title-page__separator">
-				<img src="assets/img/h1-separator.png" alt="" class="title-page__separator-icon">
+				<img src="assets/img/h1-separator-white.svg" alt="" class="title-page__separator-icon">
 			</div>
 			<p class="title-page__subtitle only-mob">
 				Orci auctor magna nunc viverra bibendum.
@@ -146,10 +210,145 @@
 				Orci auctor magna nunc viverra bibendum. Dignissim etiam cras enim et. Auctor cras dictum lorem nec massa sapien. Enim nulla adipiscing sit nullam lorem nibh etiam nunc, vel.
 			</p>
 		</div>
+
+
+		<div class="index-train__tabs tabs-box">
+			<button class="index-train__tab tab tab-white tab-active">
+				Обучение
+			</button>
+			<button class="index-train__tab tab tab-white">
+				<span class="text-hidden-mob">Технические курсы</span> <span class="text-only-mob">Курсы</span>
+			</button>
+		</div>
+		<div class="index-train__content-box">
+
+			<div class="swiper-container index-train__content active">
+				
+				<div class="index-train__list swiper-wrapper">
+
+					<div class="index-train__slide index-train-slide swiper-slide">
+						<div class="index-train-slide__icon-box">
+							<img src="assets/img/index-train-slide__01.svg" alt="" class="index-train-slide__icon">
+						</div>
+						<h3 class="index-train-slide__title">
+							Technical Diver
+						</h3>
+						<p class="index-train-slide__p">
+							Hendrerit arcu adipiscing ipsum mi, nec molestie lorem. Metus sed risus mauris ultrices venenatis nulla.
+						</p>
+						<div class="index-train-slide__price">
+							от 50 000 руб.
+						</div>
+					</div>
+
+					<div class="index-train__slide index-train-slide swiper-slide">
+						<div class="index-train-slide__icon-box">
+							<img src="assets/img/index-train-slide__01.svg" alt="" class="index-train-slide__icon">
+						</div>
+						<h3 class="index-train-slide__title">
+							Technical Diver
+						</h3>
+						<p class="index-train-slide__p">
+							Hendrerit arcu adipiscing ipsum mi, nec molestie lorem. Metus sed risus mauris ultrices venenatis nulla.
+						</p>
+						<div class="index-train-slide__price">
+							от 50 000 руб.
+						</div>
+					</div>
+
+					<div class="index-train__slide index-train-slide swiper-slide">
+						<div class="index-train-slide__icon-box">
+							<img src="assets/img/index-train-slide__01.svg" alt="" class="index-train-slide__icon">
+						</div>
+						<h3 class="index-train-slide__title">
+							Technical Diver
+						</h3>
+						<p class="index-train-slide__p">
+							Hendrerit arcu adipiscing ipsum mi, nec molestie lorem. Metus sed risus mauris ultrices venenatis nulla.
+						</p>
+						<div class="index-train-slide__price">
+							от 50 000 руб.
+						</div>
+					</div>
+
+				</div>
+
+				<div class="swiper-pagination"></div>
+
+				<div class="index-train__bg-icon-box">
+					<img src="assets/img/about-hero-icon__02.png" alt="" class="index-train__bg-icon">
+				</div>
+
+			</div>
+
+			<div class="swiper-container index-train__content">
+				
+				<div class="index-train__list swiper-wrapper">
+
+					<div class="index-train__slide index-train-slide swiper-slide">
+						<div class="index-train-slide__icon-box">
+							<img src="assets/img/index-train-slide__01.svg" alt="" class="index-train-slide__icon">
+						</div>
+						<h3 class="index-train-slide__title">
+							Technical Diver2
+						</h3>
+						<p class="index-train-slide__p">
+							Hendrerit arcu adipiscing ipsum mi, nec molestie lorem. Metus sed risus mauris ultrices venenatis nulla.
+						</p>
+						<div class="index-train-slide__price">
+							от 50 000 руб.
+						</div>
+					</div>
+
+					<div class="index-train__slide index-train-slide swiper-slide">
+						<div class="index-train-slide__icon-box">
+							<img src="assets/img/index-train-slide__01.svg" alt="" class="index-train-slide__icon">
+						</div>
+						<h3 class="index-train-slide__title">
+							Technical Diver2
+						</h3>
+						<p class="index-train-slide__p">
+							Hendrerit arcu adipiscing ipsum mi, nec molestie lorem. Metus sed risus mauris ultrices venenatis nulla.
+						</p>
+						<div class="index-train-slide__price">
+							от 50 000 руб.
+						</div>
+					</div>
+
+					<div class="index-train__slide index-train-slide swiper-slide">
+						<div class="index-train-slide__icon-box">
+							<img src="assets/img/index-train-slide__01.svg" alt="" class="index-train-slide__icon">
+						</div>
+						<h3 class="index-train-slide__title">
+							Technical Diver2
+						</h3>
+						<p class="index-train-slide__p">
+							Hendrerit arcu adipiscing ipsum mi, nec molestie lorem. Metus sed risus mauris ultrices venenatis nulla.
+						</p>
+						<div class="index-train-slide__price">
+							от 50 000 руб.
+						</div>
+					</div>
+
+				</div>
+
+				<div class="swiper-pagination"></div>
+
+				<div class="index-train__bg-icon-box">
+					<img src="assets/img/about-hero-icon__02.png" alt="" class="index-train__bg-icon">
+				</div>
+
+			</div>
+
+			<small class="index-train__small">
+				*(Цена может меняться в зависимости от курса евро)
+			</small>
+
+		</div>
 	</div>
 </section>
 
-<section class="index__places index-places">
+<section class="index__places index-places index__section">
 	<div class="index-places__fix-box fix-box">
 		<div class="title-page">
 			<h2 class="title-page__title">
@@ -166,13 +365,255 @@
 			</p>
 		</div>
 	</div>
+
+	<div class="index-places__slider-fix-box fix-box">
+		<div class="index-places__slider swiper-container" id="indexPlacesSlider">
+			<div class="index-places__slider-wrapper swiper-wrapper">
+
+				<div class="index-places__slide index-places-slide swiper-slide">
+					<div class="index-places-slide__bg-box">
+						<img src="assets/img/index-places__slide-bg_01.png" alt="" class="index-places-slide__bg">
+					</div>
+					<div class="index-places-slide__content">
+						<h3 class="index-places-slide__title">
+							Сухогруз <span class="index-places-slide__title_italic-nobr italic">"Сакко-Ванцетти"</span>
+						</h3>
+						<h4 class="index-places-slide__subtitle">
+							44°30’N 38°02’E
+						</h4>
+						<div class="index-places-slide__info-box">
+							<div class="index-places-slide__price">
+								46 000 ₽
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__date">
+								3 - 6 Июня
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__place">
+								
+								<span class="text-only-mob">
+									Геленджик
+								</span>
+								<span class="text-hidden-mob">
+									Геленджик, мыс “Толстый”
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="index-places__slide index-places-slide swiper-slide">
+					<div class="index-places-slide__bg-box">
+						<img src="assets/img/index-places__slide-bg_01.png" alt="" class="index-places-slide__bg">
+					</div>
+					<div class="index-places-slide__content">
+						<h3 class="index-places-slide__title">
+							Погружение в открытое море <span class="italic">"Веха створная"</span>
+						</h3>
+						<h4 class="index-places-slide__subtitle">
+							44°30’N 38°02’E
+						</h4>
+						<div class="index-places-slide__info-box">
+							<div class="index-places-slide__price">
+								46 000 ₽
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__date">
+								3 - 6 Июня
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__place">
+								
+								<span class="text-only-mob">
+									Геленджик
+								</span>
+								<span class="text-hidden-mob">
+									Геленджик, мыс “Толстый”
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="index-places__slide index-places-slide swiper-slide">
+					<div class="index-places-slide__bg-box">
+						<img src="assets/img/index-places__slide-bg_01.png" alt="" class="index-places-slide__bg">
+					</div>
+					<div class="index-places-slide__content">
+						<h3 class="index-places-slide__title">
+							Сухогруз <span class="index-places-slide__title_italic-nobr italic">"Сакко-Ванцетти"</span>
+						</h3>
+						<h4 class="index-places-slide__subtitle">
+							44°30’N 38°02’E
+						</h4>
+						<div class="index-places-slide__info-box">
+							<div class="index-places-slide__price">
+								46 000 ₽
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__date">
+								3 - 6 Июня
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__place">
+								
+								<span class="text-only-mob">
+									Геленджик
+								</span>
+								<span class="text-hidden-mob">
+									Геленджик, мыс “Толстый”
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="index-places__slide index-places-slide swiper-slide">
+					<div class="index-places-slide__bg-box">
+						<img src="assets/img/index-places__slide-bg_01.png" alt="" class="index-places-slide__bg">
+					</div>
+					<div class="index-places-slide__content">
+						<h3 class="index-places-slide__title">
+							Сухогруз <span class="index-places-slide__title_italic-nobr italic">"Сакко-Ванцетти"</span>
+						</h3>
+						<h4 class="index-places-slide__subtitle">
+							44°30’N 38°02’E
+						</h4>
+						<div class="index-places-slide__info-box">
+							<div class="index-places-slide__price">
+								46 000 ₽
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__date">
+								3 - 6 Июня
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__place">
+								
+								<span class="text-only-mob">
+									Геленджик
+								</span>
+								<span class="text-hidden-mob">
+									Геленджик, мыс “Толстый”
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="index-places__slide index-places-slide swiper-slide">
+					<div class="index-places-slide__bg-box">
+						<img src="assets/img/index-places__slide-bg_01.png" alt="" class="index-places-slide__bg">
+					</div>
+					<div class="index-places-slide__content">
+						<h3 class="index-places-slide__title">
+							Сухогруз <span class="index-places-slide__title_italic-nobr italic">"Сакко-Ванцетти"</span>
+						</h3>
+						<h4 class="index-places-slide__subtitle">
+							44°30’N 38°02’E
+						</h4>
+						<div class="index-places-slide__info-box">
+							<div class="index-places-slide__price">
+								46 000 ₽
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__date">
+								3 - 6 Июня
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__place">
+								
+								<span class="text-only-mob">
+									Геленджик
+								</span>
+								<span class="text-hidden-mob">
+									Геленджик, мыс “Толстый”
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="index-places__slide index-places-slide swiper-slide">
+					<div class="index-places-slide__bg-box">
+						<img src="assets/img/index-places__slide-bg_01.png" alt="" class="index-places-slide__bg">
+					</div>
+					<div class="index-places-slide__content">
+						<h3 class="index-places-slide__title">
+							Самолет-бомбардировщик <span class="italic">"Бостон"</span>
+						</h3>
+						<h4 class="index-places-slide__subtitle">
+							44°30’N 38°02’E
+						</h4>
+						<div class="index-places-slide__info-box">
+							<div class="index-places-slide__price">
+								46 000 ₽
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__date">
+								3 - 6 Июня
+							</div>
+
+							<div class="index-places-slide__icon-text index-places-slide__place">
+								<span class="text-only-mob">
+									Геленджик
+								</span>
+								<span class="text-hidden-mob">
+									Геленджик, мыс “Толстый”
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="swiper-pagination" id="indexPlacesSliderPagination"></div>
+
+			<div class="index-places__slider-btns">
+				<button class="index-places__slider-btn prev" id="indexPlacesSliderPrevBtn">
+					<img src="assets/img/index-places__slider-arrow.svg" alt="" class="index-places__slider-btn-icon">
+				</button>
+				<button class="index-places__slider-btn next" id="indexPlacesSliderNextBtn">
+					<img src="assets/img/index-places__slider-arrow.svg" alt="" class="index-places__slider-btn-icon">
+				</button>
+			</div>
+		</div>
+	</div>
 </section>
 
-<section>
-	Запишитесь на пробное погружение!
+<section class="index__test index-test index__section">
+	<form class="index-test__fix-box fix-box">
+		<legend>
+			<h2 class="index-test__title">
+				Запишитесь на пробное погружение!
+			</h2>
+			<p class="index-test__subtitle">
+				Sem lacus praesent mauris facilisis dis nisi felis diam.
+			</p>
+		</legend>
+		<fieldset class="index-test__fieldset">
+			<label class="index-test__label">
+				<input type="text" class="index-test__input" placeholder="Укажите Ваше имя и фамилию">
+			</label>
+
+			<label class="index-test__label">
+				<input type="text" class="index-test__input" placeholder="Укажите Ваш телефон">
+			</label>
+
+			<button type="submit" class="index-test__submit btn btn-blue">
+				Отправить
+			</button>
+		</fieldset>
+
+		<p class="index-test__p">
+			Aliquet rhoncus cras aliquet viverra consequat. Pulvinar massa interdum sed eget semper tincidunt nisi. Eget euismod consectetur ultrices tortor.
+		</p>
+	</form>
 </section>
 
-<section class="index__price index-price">
+<section class="index__price index-price index__section" id="indexPrice">
 	<div class="index-price__fix-box fix-box">
 		<div class="title-page">
 			<h2 class="title-page__title">
@@ -188,10 +629,180 @@
 				Orci auctor magna nunc viverra bibendum. Dignissim etiam cras enim et. Auctor cras dictum lorem nec massa sapien. Enim nulla adipiscing sit nullam lorem nibh etiam nunc, vel.
 			</p>
 		</div>
+
+
+			<div class="index-price__tabs tabs-box">
+				<button class="index-price__tab tab tab-active">
+					Для новичков
+				</button>
+				<button class="index-price__tab tab">
+					Для опытных
+				</button>
+			</div>
+
+			<div class="index-price__content-box">
+
+				<div class="swiper-container services-places__content active">
+					
+					<div class="services-places__list swiper-wrapper">
+
+						<a href="#" class="services-places__link services-places-link swiper-slide">
+							<div class="services-places-link__header">
+								<div class="services-places-link__icon-box">
+									<img src="assets/img/services-places__01.svg" alt="" class="services-places-link__icon">
+								</div>
+								<h3 class="services-places-link__name">
+									Ознакомительное погружение
+								</h3>
+							</div>
+							<p class="services-places-link__text">
+								Orci auctor magna nunc viverra bibendum. Dignissim etiam cras enim et. Auctor cras dictum
+							</p>
+							<div class="services-places-link__price">
+								2 000 руб.
+							</div>
+						</a>
+
+						<a href="#" class="services-places__link services-places-link swiper-slide">
+							<div class="services-places-link__header">
+								<div class="services-places-link__icon-box">
+									<img src="assets/img/services-places__02.svg" alt="" class="services-places-link__icon">
+								</div>
+								<h3 class="services-places-link__name">
+									В открытом море “Якорная банка”
+								</h3>
+							</div>
+							<p class="services-places-link__text">
+								Погружение в открытом море "Якорная Банка". Кормление рыб.
+							</p>
+							<div class="services-places-link__price">
+								2 500 руб.
+							</div>
+						</a>
+
+						<a href="#" class="services-places__link services-places-link swiper-slide">
+							<div class="services-places-link__header">
+								<div class="services-places-link__icon-box">
+									<img src="assets/img/services-places__03.svg" alt="" class="services-places-link__icon">
+								</div>
+								<h3 class="services-places-link__name">
+									Погружение в гроты “Веха”
+								</h3>
+							</div>
+							<p class="services-places-link__text">
+								Погружение в открытом море "Старая Веха". Кормление рыб.
+							</p>
+							<div class="services-places-link__price">
+								2 500 руб.
+							</div>
+						</a>
+
+						<a href="#" class="services-places__link services-places-link swiper-slide">
+							<div class="services-places-link__header">
+								<div class="services-places-link__icon-box">
+									<img src="assets/img/services-places__04.svg" alt="" class="services-places-link__icon">
+								</div>
+								<h3 class="services-places-link__name">
+									Фото и видео съемка
+								</h3>
+							</div>
+							<p class="services-places-link__text">
+								Orci auctor magna nunc viverra bibendum. Dignissim etiam cras enim et. Auctor cras dictum
+							</p>
+							<div class="services-places-link__price">
+								2 000 руб.
+							</div>
+						</a>
+
+					</div>
+				</div>
+
+				<div class="swiper-container services-places__content">
+					
+					<div class="services-places__list swiper-wrapper">
+
+						<a href="#" class="services-places__link services-places-link swiper-slide">
+							<div class="services-places-link__header">
+								<div class="services-places-link__icon-box">
+									<img src="assets/img/index-price__01.svg" alt="" class="services-places-link__icon">
+								</div>
+								<h3 class="services-places-link__name">
+									Погружение на «Банки»
+								</h3>
+							</div>
+							<p class="services-places-link__text">
+								Orci auctor magna nunc viverra bibendum. Dignissim etiam cras enim et. Auctor cras dictum
+							</p>
+							<div class="services-places-link__price">
+								2 000 руб.
+							</div>
+						</a>
+
+						<a href="#" class="services-places__link services-places-link swiper-slide">
+							<div class="services-places-link__header">
+								<div class="services-places-link__icon-box">
+									<img src="assets/img/index-price__02.svg" alt="" class="services-places-link__icon">
+								</div>
+								<h3 class="services-places-link__name">
+									Самолет "Бостон"
+								</h3>
+							</div>
+							<p class="services-places-link__text">
+								Погружение в открытом море "Якорная Банка". Кормление рыб.
+							</p>
+							<div class="services-places-link__price">
+								2 500 руб.
+							</div>
+						</a>
+
+						<a href="#" class="services-places__link services-places-link swiper-slide">
+							<div class="services-places-link__header">
+								<div class="services-places-link__icon-box">
+									<img src="assets/img/index-price__03.svg" alt="" class="services-places-link__icon">
+								</div>
+								<h3 class="services-places-link__name">
+									"Сакко и Ванцетти"
+								</h3>
+							</div>
+							<p class="services-places-link__text">
+								Погружение в открытом море "Старая Веха". Кормление рыб.
+							</p>
+							<div class="services-places-link__price">
+								2 500 руб.
+							</div>
+						</a>
+
+						<a href="#" class="services-places__link services-places-link swiper-slide">
+							<div class="services-places-link__header">
+								<div class="services-places-link__icon-box">
+									<img src="assets/img/index-price__04.svg" alt="" class="services-places-link__icon">
+								</div>
+								<h3 class="services-places-link__name">
+									Комплект снаряжения
+								</h3>
+							</div>
+							<p class="services-places-link__text">
+								Orci auctor magna nunc viverra bibendum. Dignissim etiam cras enim et. Auctor cras dictum
+							</p>
+							<div class="services-places-link__price">
+								2 000 руб.
+							</div>
+						</a>
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="services-places__all-link btns-box">
+				<a href="#" class="services-places__all-services btn btn-blue">
+					Все услуги
+				</a>
+			</div>
 	</div>
 </section>
 
-<section class="index__team index-team">
+<div class="index__team index-team index__section">
 	<div class="index-team__fix-box fix-box">
 		<div class="title-page">
 			<h2 class="title-page__title">
@@ -208,9 +819,93 @@
 			</p>
 		</div>
 	</div>
-</section>
+
+	<section class="index-team__lead index-team-lead">
+		<div class="index-team-lead__fix-box fix-box">
+			<div class="index-team-lead__ph-box">
+				<img src="assets/img/team-lead.png" alt="" class="index-team-lead__ph">
+			</div>
+			<div class="index-team-lead__content">
+				<h3 class="index-team-lead__title">
+					Мальгинов Василий Владимирович
+				</h3>
+				<div class="index-team-lead__separator-box">
+					<img src="assets/img/h1-separator-white.svg" alt="" class="index-team-lead__separator">
+				</div>
+				<p class="index-team-lead__p" id="indexTeamLeadText">
+					Клубом руководит Мальгинов Василий Владимирович, InstuctorIANTD, Normoxic ТгіmixInstructorIANTD. Мальгинов Василий работает в геленджикской службе спасения «Кубань-СПАС», где систематически проходит курсы оказания любого вида помощи пострадавшим. На данный моментвступает в Российское Географическое Общество. Является инструктором по дайвингу с десятилетним стажем, имеющий богатый опыт погружений в различные водоемы, на внушительные глубины, как в России, так и за ее пределами. Больше года Василий жил и работал дайвинг инструктором в Египте, вернувшись на Родину, стал ведущим инструктором одного из клубов г. Геленджика, но останавливаться в развитии не планировал и в 2018 году открыл свой подводный клуб, куда охотно перешли все его ученики и просто любители качественного дайвинга. Василий является лицензированным специалистом по обслуживанию дайв снаряжения.
+				</p>
+				<button type="button" class="index-team-lead__toggler" id="indexTeamLeadToggler">
+					Подробнее
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="index-team__list index-team-list">
+		<div class="index-team-list__fix-box fix-box">
+			<h4 class="index-team-list__title">
+				Наши инструктора
+			</h4>
+			<div class="index-team-list__slider swiper-container" id="indexTeamListSlider">
+				<div class="index-team-list__slider-wrapper swiper-wrapper">
+					
+					<div class="index-team-list__item index-team-list-item swiper-slide">
+						<div class="index-team-list-item__ph-box">
+							<img src="assets/img/index-team__01.png" alt="" class="index-team-list-item__ph">
+						</div>
+						<h5 class="index-team-list-item__title">
+							Дарья Новицкая
+						</h5>
+						<h6 class="index-team-list-item__subtitle">
+							Администратор Дайв-центра
+						</h6>
+					</div>
+					
+					<div class="index-team-list__item index-team-list-item swiper-slide">
+						<div class="index-team-list-item__ph-box">
+							<img src="assets/img/index-team__02.png" alt="" class="index-team-list-item__ph">
+						</div>
+						<h5 class="index-team-list-item__title">
+							Владимир Фамилия
+						</h5>
+						<h6 class="index-team-list-item__subtitle">
+							PADI Master Scuba Diver инструктор
+						</h6>
+					</div>
+					
+					<div class="index-team-list__item index-team-list-item swiper-slide">
+						<div class="index-team-list-item__ph-box">
+							<img src="assets/img/index-team__03.png" alt="" class="index-team-list-item__ph">
+						</div>
+						<h5 class="index-team-list-item__title">
+							Вадим Белоусов
+						</h5>
+						<h6 class="index-team-list-item__subtitle">
+							PADI Divemaster инструктор
+						</h6>
+					</div>
+					
+					<div class="index-team-list__item index-team-list-item swiper-slide">
+						<div class="index-team-list-item__ph-box">
+							<img src="assets/img/index-team__04.png" alt="" class="index-team-list-item__ph">
+						</div>
+						<h5 class="index-team-list-item__title">
+							Вадим Белоусов
+						</h5>
+						<h6 class="index-team-list-item__subtitle">
+							PADI Master Scuba Diver инструктор
+						</h6>
+					</div>
+
+				</div>
+				<div class="swiper-pagination" id="indexTeamListSliderPagination"></div>
+			</div>
+		</div>
+	</section>
+</div>
 	
-<section class="index__reviews index-reviews">
+<section class="index__reviews index-reviews index__section">
 	<div class="index-reviews__fix-box fix-box">
 		<div class="title-page white">
 			<h2 class="title-page__title">
@@ -338,7 +1033,7 @@
 	</div>
 </section>
 
-<section class="index__gallery index-gallery">
+<section class="index__gallery index-gallery index__section">
 	<div class="index-gallery__fix-box fix-box">
 		<div class="title-page">
 			<h2 class="title-page__title">
@@ -368,7 +1063,7 @@
 	
 </section>
 
-<section class="index__blog index-blog">
+<section class="index__blog index-blog index__section">
 	<div class="index-blog__fix-box fix-box">
 		<div class="title-page">
 			<h2 class="title-page__title">
