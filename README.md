@@ -1,6 +1,7 @@
 # Дайвинг клуб
 
 ## Страницы
+01. [Главная](https://timshaq.github.io/diving-dist/index.html)
 01. [О нас](https://timshaq.github.io/diving-dist/about.html)
 01. [Контакты](https://timshaq.github.io/diving-dist/contacts.html)
 01. [Отзывы](https://timshaq.github.io/diving-dist/reviews.html)
@@ -12,4 +13,3 @@
 01. [Попап. Отзыв](https://timshaq.github.io/diving-dist/popup__review.html)
 01. [Попап. Отзыв. Ошибка](https://timshaq.github.io/diving-dist/popup__review-fail.html)
 01. [Попап. Отзыв. Успех](https://timshaq.github.io/diving-dist/popup__review-success.html)
-01. [Главная (в процессе)](https://timshaq.github.io/diving-dist/index.html)
