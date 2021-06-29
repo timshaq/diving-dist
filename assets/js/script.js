@@ -53,11 +53,11 @@
       const s = window.matchMedia(`(min-width:${t}px)`);
       let c;
 
-      const r = function () {
+      const o = function () {
         !0 !== s.matches ? !1 !== s.matches || (c = new Swiper(i, n)) : void 0 !== c && c.destroy(!0, !0);
       };
 
-      s.addListener(r), r();
+      s.addListener(o), o();
     }
 
     const t = document.querySelectorAll(".services-places .services-places__content-box .swiper-container"),
@@ -89,8 +89,8 @@
         }
       }
     });
-    const r = document.getElementById("aboutCertificatesMobSlider");
-    r && e(r, 768, {
+    const o = document.getElementById("aboutCertificatesMobSlider");
+    o && e(o, 768, {
       pagination: {
         el: "#aboutCertificatesMobSliderPagination",
         type: "bullets"
@@ -126,14 +126,14 @@
             i = document.getElementById("indexHeroFishRight"),
             s = 10,
             c = 25,
-            r = 15,
-            o = .05;
+            o = 15,
+            r = .05;
       let a = 0,
           l = 0,
           d = 0,
           u = 0;
       !function e() {
-        a += (d - a) * o, l += (u - l) * o, t.style.cssText = `transform: translate(${a / s - 50}%,${l / s - 50}%)`, n.style.cssText = `transform: translate(${-a / c}%,${-l / c}%)`, i.style.cssText = `transform: translate(${-a / r}%,${-l / r}%)`, requestAnimationFrame(e);
+        a += (d - a) * r, l += (u - l) * r, t.style.cssText = `transform: translate(${a / s - 50}%,${l / s - 50}%)`, n.style.cssText = `transform: translate(${-a / c}%,${-l / c}%)`, i.style.cssText = `transform: translate(${-a / o}%,${-l / o}%)`, requestAnimationFrame(e);
       }(), e.addEventListener("mousemove", function (t) {
         const n = e.offsetWidth,
               i = e.offsetHeight,
@@ -245,8 +245,8 @@
     }
 
     const c = document.querySelectorAll(".index-train .index-train__content-box .swiper-container"),
-          r = Array.prototype.slice.call(c);
-    r.length > 0 && r.forEach(e => {
+          o = Array.prototype.slice.call(c);
+    o.length > 0 && o.forEach(e => {
       const t = e.querySelector(".swiper-pagination");
       new Swiper(e, {
         watchOverflow: !0,
@@ -270,6 +270,23 @@
         }
       });
     });
+    const r = document.getElementById("indexPopupSlider");
+
+    if (r) {
+      new Swiper(r, {
+        watchOverflow: !0,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: "#indexPopupSliderPagination",
+          type: "bullets"
+        },
+        navigation: {
+          prevEl: "#indexPopupSliderPaginationPrev",
+          nextEl: "#indexPopupSliderPaginationNext"
+        }
+      });
+    }
   };
 }, function (e, t, n) {
   "use strict";
@@ -460,12 +477,14 @@
   var i = n(5),
       s = n(4),
       c = n(6),
-      r = n(0),
-      o = n(7),
+      o = n(0),
+      r = n(7),
       a = n(3),
       l = n(1),
       d = n(2);
   document.addEventListener("DOMContentLoaded", function () {
-    Object(i.default)(), Object(s.default)(), Object(c.default)(), Object(r.default)(), Object(o.default)(), Object(a.default)(), Object(l.default)(), Object(d.default)();
+    Object(i.default)(), Object(s.default)(), Object(c.default)(), Object(o.default)(), Object(r.default)(), Object(a.default)(), Object(l.default)(), Object(d.default)();
+    let e = .01 * window.innerHeight;
+    document.documentElement.style.setProperty("--vh", e + "px");
   });
 }]);

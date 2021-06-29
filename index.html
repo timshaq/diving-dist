@@ -141,6 +141,10 @@
 
 <section class="index__hero index-hero" id="indexHeroParallax">
 	<div class="index-hero__bg-box">
+		<img src="assets/img/hero-bg__768h.png" alt="" class="index-hero__bg_h768">
+
+		<img src="assets/img/hero-bg__768h.png" alt="" class="index-hero__bg_h1080">
+
 		<div class="index-hero__fish-left-box" id="indexHeroFishLeft">
 			<img src="assets/img/fish-left__768h.png" alt="" class="index-hero__fish-left-768">
 		</div>
@@ -1165,6 +1169,122 @@
 </div>
 
 </main>
+
+<div class="popup-box">
+	<div class="popup team-member-popup">
+		<div class="team-member-popup__ph-box">
+			<img src="assets/img/team-member-popup__ph.png" alt="" class="team-member-popup__ph">
+		</div>
+		<div class="popup__close">
+			<img src="assets/img/popup-close.svg" alt="" class="team-member-popup__close-icon">
+		</div>
+		<div class="team-member-popup__title">
+			Бирюков Егор Дмитриевич
+		</div>
+		<div class="team-member-popup__subtitle">
+			PADI Master Scuba Diver инструктор
+		</div>
+		<div class="team-member-popup__separator-box">
+			<img src="assets/img/h1-separator.png" alt="" class="team-member-popup__separatoe-icon">
+		</div>
+		<div class="team-member-popup__content">
+			<div class="team-member-popup__text">
+				<div class="team-member-popup__text-title">
+					Всем привет!
+				</div>
+				<p class="team-member-popup__p">
+					Ut elementum vivamus enim facilisis. Enim lectus egestas commodo scelerisque massa sit facilisis pellentesque ac. Laoreet ac enim amet rutrum at aliquam aliquet risus cras. Pretium etiam nunc cras id gravida laoreet. A praesent sed ornare quis faucibus faucibus. Ornare felis, nec imperdiet a erat nunc. Eget nunc, non viverra porttitor. Sagittis ornare ac feugiat viverra sed vitae ipsum quis. Tellus accumsan tristique sed ante. Quis ut sollicitudin leo fermentum laoreet tellus. Egestas viverra pellentesque ornare purus eu sit mauris consequat. 
+				</p>
+			</div>
+			<div class="team-member-popup__slider-box">
+				<div class="team-member-popup__slider swiper-container" id="indexPopupSlider">
+					<div class="team-member-popup__slider-wrapper swiper-wrapper">
+						<img src="assets/img/about-certificates__01.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__02.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__03.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__04.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__05.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__06.png" alt="" class="team-member-popup__slide swiper-slide">
+					</div>
+					<div class="swiper-pagination" id="indexPopupSliderPagination"></div>
+
+				</div>
+
+				<button class="team-member-popup__slider-prev" id="indexPopupSliderPaginationPrev">
+					<img src="assets/img/service-trip-arrow.svg" alt="" class="team-member-popup__slider-btn-icon">
+				</button>
+
+				<button class="team-member-popup__slider-next" id="indexPopupSliderPaginationNext">
+					<img src="assets/img/service-trip-arrow.svg" alt="" class="team-member-popup__slider-btn-icon">
+				</button>
+			</div>
+		</div>
+		<div class="team-member-popup__links">
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_01.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_02.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_03.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_04.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+		</div>
+	</div>
+</div>
+
+<!-- JS функции для открытия/закрытия модалок -->
+<script>
+	function disableScroll() {
+		html.style.overflowX = 'hidden';
+		html.style.overflowY = 'hidden';
+	}
+
+	function enableScroll() {
+		html.style.overflowX = 'hidden';
+		html.style.overflowY = 'scroll';
+	}
+
+	function closeEl(el) {
+		el.classList.remove('open');
+		enableScroll();
+	}
+
+	function openEl(el) {
+		el.classList.add('open');
+		disableScroll();
+	}
+
+	const popupBox = document.querySelector('.popup-box');
+	const popupClose = popupBox.querySelector('.popup__close');
+
+	// закрыть при клике на задний фон
+	popupBox.addEventListener('click', function(ev) {
+		if(ev.target === this) closeEl(popupBox);
+	})
+
+
+	// закрыть при клике на крестик
+	popupClose.addEventListener('click', function() {
+		closeEl(popupBox)
+	})
+
+	// находим всех участников, для которых будут открыты попапы
+	const membersNL = document.querySelectorAll('.index-team-list__item.index-team-list-item.swiper-slide')
+	const members = Array.prototype.slice.call(membersNL);
+
+	// на каждого участника ставим листенер для открытия попапа
+	members.forEach(member => {
+		member.addEventListener('click', function() {
+			openEl(popupBox)
+		})
+	})
+
+</script>
+<!-- JS функции для открытия/закрытия модалок -->
 
 <footer class="footer">
 	<div class="footer__bg-box">
