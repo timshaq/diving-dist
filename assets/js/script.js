@@ -484,7 +484,7 @@
       d = n(2);
   document.addEventListener("DOMContentLoaded", function () {
     Object(i.default)(), Object(s.default)(), Object(c.default)(), Object(o.default)(), Object(r.default)(), Object(a.default)(), Object(l.default)(), Object(d.default)();
-    let e = .01 * window.innerHeight;
-    document.documentElement.style.setProperty("--vh", e + "px");
+    let e = document.getElementById("header").offsetHeight;
+    document.documentElement.style.setProperty("--header-vh", e + "px");
   });
 }]);
