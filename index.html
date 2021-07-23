@@ -7,6 +7,7 @@
 
 	<link rel="stylesheet" href="assets/lib/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+	<link rel="stylesheet" href="assets/lib/lightgallery/css/lightgallery.min.css">
 </head>
 
 <body id="body">
@@ -52,7 +53,7 @@
 			</ul>
 		</nav>
 		<div class="header__tel">
-			<a href="#" class="header__tel-link">
+			<a href="tel:79282055714" class="header__tel-link">
 
 				<img src="assets/img/header__pc-tel.svg" alt="" class="header__tel-link-icon logo-pc">
 
@@ -66,7 +67,7 @@
 					7 (928) 205-57-14
 				</span>
 			</a>
-			<button class="header__tel-callback">
+			<button class="header__tel-callback callback-btn">
 				Обратный звонок
 			</button>
 		</div>
@@ -854,7 +855,7 @@
 			<div class="index-team-list__slider swiper-container" id="indexTeamListSlider">
 				<div class="index-team-list__slider-wrapper swiper-wrapper">
 					
-					<div class="index-team-list__item index-team-list-item swiper-slide">
+					<div class="index-team-list__item index-team-list-item swiper-slide" data-popup-id="0">
 						<div class="index-team-list-item__ph-box">
 							<img src="assets/img/index-team__01.png" alt="" class="index-team-list-item__ph">
 						</div>
@@ -866,7 +867,7 @@
 						</h6>
 					</div>
 					
-					<div class="index-team-list__item index-team-list-item swiper-slide">
+					<div class="index-team-list__item index-team-list-item swiper-slide" data-popup-id="1">
 						<div class="index-team-list-item__ph-box">
 							<img src="assets/img/index-team__02.png" alt="" class="index-team-list-item__ph">
 						</div>
@@ -878,7 +879,7 @@
 						</h6>
 					</div>
 					
-					<div class="index-team-list__item index-team-list-item swiper-slide">
+					<div class="index-team-list__item index-team-list-item swiper-slide" data-popup-id="2">
 						<div class="index-team-list-item__ph-box">
 							<img src="assets/img/index-team__03.png" alt="" class="index-team-list-item__ph">
 						</div>
@@ -890,7 +891,7 @@
 						</h6>
 					</div>
 					
-					<div class="index-team-list__item index-team-list-item swiper-slide">
+					<div class="index-team-list__item index-team-list-item swiper-slide" data-popup-id="3">
 						<div class="index-team-list-item__ph-box">
 							<img src="assets/img/index-team__04.png" alt="" class="index-team-list-item__ph">
 						</div>
@@ -1054,13 +1055,25 @@
 			</p>
 		</div>
 
-		<div class="index-gallery__list">
-			<img src="assets/img/gallery__01.png" alt="" class="index-gallery__ph index-gallery__ph_first">
-			<img src="assets/img/gallery__02.png" alt="" class="index-gallery__ph index-gallery__ph_two">
-			<img src="assets/img/gallery__03.png" alt="" class="index-gallery__ph index-gallery__ph_three">
-			<img src="assets/img/gallery__05.png" alt="" class="index-gallery__ph index-gallery__ph_four">
-			<img src="assets/img/gallery__06.png" alt="" class="index-gallery__ph index-gallery__ph_five">
-			<img src="assets/img/gallery__04.png" alt="" class="index-gallery__ph index-gallery__ph_six">
+		<div class="index-gallery__list" id="lightgallery">
+			<a href="assets/img/gallery__01.png" class="index-gallery__ph index-gallery__ph_first">
+				<img src="assets/img/gallery__01.png" alt="" class="index-gallery__ph index-gallery__ph_first">
+			</a>
+			<a href="assets/img/gallery__02.png" class="index-gallery__ph index-gallery__ph_two">
+				<img src="assets/img/gallery__02.png" alt="" class="index-gallery__ph index-gallery__ph_two">
+			</a>
+			<a href="assets/img/gallery__03.png" class="index-gallery__ph index-gallery__ph_three">
+				<img src="assets/img/gallery__03.png" alt="" class="index-gallery__ph index-gallery__ph_three">
+			</a>
+			<a href="assets/img/gallery__05.png" class="index-gallery__ph index-gallery__ph_four">
+				<img src="assets/img/gallery__05.png" alt="" class="index-gallery__ph index-gallery__ph_four">
+			</a>
+			<a href="assets/img/gallery__06.png" class="index-gallery__ph index-gallery__ph_five">
+				<img src="assets/img/gallery__06.png" alt="" class="index-gallery__ph index-gallery__ph_five">
+			</a>
+			<a href="assets/img/gallery__04.png" class="index-gallery__ph index-gallery__ph_six">
+				<img src="assets/img/gallery__04.png" alt="" class="index-gallery__ph index-gallery__ph_six">
+			</a>
 		</div>
 
 	</div>
@@ -1170,7 +1183,7 @@
 
 </main>
 
-<div class="popup-box">
+<div class="popup-box" data-popup-id="0">
 	<div class="popup team-member-popup">
 		<div class="team-member-popup__ph-box">
 			<img src="assets/img/team-member-popup__ph.png" alt="" class="team-member-popup__ph">
@@ -1179,7 +1192,205 @@
 			<img src="assets/img/popup-close.svg" alt="" class="team-member-popup__close-icon">
 		</div>
 		<div class="team-member-popup__title">
-			Бирюков Егор Дмитриевич
+			Инструктор 1
+		</div>
+		<div class="team-member-popup__subtitle">
+			PADI Master Scuba Diver инструктор
+		</div>
+		<div class="team-member-popup__separator-box">
+			<img src="assets/img/h1-separator.png" alt="" class="team-member-popup__separatoe-icon">
+		</div>
+		<div class="team-member-popup__content">
+			<div class="team-member-popup__text">
+				<div class="team-member-popup__text-title">
+					Всем привет!
+				</div>
+				<p class="team-member-popup__p">
+					Ut elementum vivamus enim facilisis. Enim lectus egestas commodo scelerisque massa sit facilisis pellentesque ac. Laoreet ac enim amet rutrum at aliquam aliquet risus cras. Pretium etiam nunc cras id gravida laoreet. A praesent sed ornare quis faucibus faucibus. Ornare felis, nec imperdiet a erat nunc. Eget nunc, non viverra porttitor. Sagittis ornare ac feugiat viverra sed vitae ipsum quis. Tellus accumsan tristique sed ante. Quis ut sollicitudin leo fermentum laoreet tellus. Egestas viverra pellentesque ornare purus eu sit mauris consequat. 
+				</p>
+			</div>
+			<div class="team-member-popup__slider-box">
+				<div class="team-member-popup__slider swiper-container" id="indexPopupSlider">
+					<div class="team-member-popup__slider-wrapper swiper-wrapper">
+						<img src="assets/img/about-certificates__01.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__02.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__03.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__04.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__05.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__06.png" alt="" class="team-member-popup__slide swiper-slide">
+					</div>
+					<div class="swiper-pagination" id="indexPopupSliderPagination"></div>
+
+				</div>
+
+				<button class="team-member-popup__slider-prev" id="indexPopupSliderPaginationPrev">
+					<img src="assets/img/service-trip-arrow.svg" alt="" class="team-member-popup__slider-btn-icon">
+				</button>
+
+				<button class="team-member-popup__slider-next" id="indexPopupSliderPaginationNext">
+					<img src="assets/img/service-trip-arrow.svg" alt="" class="team-member-popup__slider-btn-icon">
+				</button>
+			</div>
+		</div>
+		<div class="team-member-popup__links">
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_01.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_02.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_03.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_04.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="popup-box" data-popup-id="1">
+	<div class="popup team-member-popup">
+		<div class="team-member-popup__ph-box">
+			<img src="assets/img/team-member-popup__ph.png" alt="" class="team-member-popup__ph">
+		</div>
+		<div class="popup__close">
+			<img src="assets/img/popup-close.svg" alt="" class="team-member-popup__close-icon">
+		</div>
+		<div class="team-member-popup__title">
+			Инструктор 2
+		</div>
+		<div class="team-member-popup__subtitle">
+			PADI Master Scuba Diver инструктор
+		</div>
+		<div class="team-member-popup__separator-box">
+			<img src="assets/img/h1-separator.png" alt="" class="team-member-popup__separatoe-icon">
+		</div>
+		<div class="team-member-popup__content">
+			<div class="team-member-popup__text">
+				<div class="team-member-popup__text-title">
+					Всем привет!
+				</div>
+				<p class="team-member-popup__p">
+					Ut elementum vivamus enim facilisis. Enim lectus egestas commodo scelerisque massa sit facilisis pellentesque ac. Laoreet ac enim amet rutrum at aliquam aliquet risus cras. Pretium etiam nunc cras id gravida laoreet. A praesent sed ornare quis faucibus faucibus. Ornare felis, nec imperdiet a erat nunc. Eget nunc, non viverra porttitor. Sagittis ornare ac feugiat viverra sed vitae ipsum quis. Tellus accumsan tristique sed ante. Quis ut sollicitudin leo fermentum laoreet tellus. Egestas viverra pellentesque ornare purus eu sit mauris consequat. 
+				</p>
+			</div>
+			<div class="team-member-popup__slider-box">
+				<div class="team-member-popup__slider swiper-container" id="indexPopupSlider">
+					<div class="team-member-popup__slider-wrapper swiper-wrapper">
+						<img src="assets/img/about-certificates__01.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__02.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__03.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__04.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__05.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__06.png" alt="" class="team-member-popup__slide swiper-slide">
+					</div>
+					<div class="swiper-pagination" id="indexPopupSliderPagination"></div>
+
+				</div>
+
+				<button class="team-member-popup__slider-prev" id="indexPopupSliderPaginationPrev">
+					<img src="assets/img/service-trip-arrow.svg" alt="" class="team-member-popup__slider-btn-icon">
+				</button>
+
+				<button class="team-member-popup__slider-next" id="indexPopupSliderPaginationNext">
+					<img src="assets/img/service-trip-arrow.svg" alt="" class="team-member-popup__slider-btn-icon">
+				</button>
+			</div>
+		</div>
+		<div class="team-member-popup__links">
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_01.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_02.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_03.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_04.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="popup-box" data-popup-id="2">
+	<div class="popup team-member-popup">
+		<div class="team-member-popup__ph-box">
+			<img src="assets/img/team-member-popup__ph.png" alt="" class="team-member-popup__ph">
+		</div>
+		<div class="popup__close">
+			<img src="assets/img/popup-close.svg" alt="" class="team-member-popup__close-icon">
+		</div>
+		<div class="team-member-popup__title">
+			Инструктор 3
+		</div>
+		<div class="team-member-popup__subtitle">
+			PADI Master Scuba Diver инструктор
+		</div>
+		<div class="team-member-popup__separator-box">
+			<img src="assets/img/h1-separator.png" alt="" class="team-member-popup__separatoe-icon">
+		</div>
+		<div class="team-member-popup__content">
+			<div class="team-member-popup__text">
+				<div class="team-member-popup__text-title">
+					Всем привет!
+				</div>
+				<p class="team-member-popup__p">
+					Ut elementum vivamus enim facilisis. Enim lectus egestas commodo scelerisque massa sit facilisis pellentesque ac. Laoreet ac enim amet rutrum at aliquam aliquet risus cras. Pretium etiam nunc cras id gravida laoreet. A praesent sed ornare quis faucibus faucibus. Ornare felis, nec imperdiet a erat nunc. Eget nunc, non viverra porttitor. Sagittis ornare ac feugiat viverra sed vitae ipsum quis. Tellus accumsan tristique sed ante. Quis ut sollicitudin leo fermentum laoreet tellus. Egestas viverra pellentesque ornare purus eu sit mauris consequat. 
+				</p>
+			</div>
+			<div class="team-member-popup__slider-box">
+				<div class="team-member-popup__slider swiper-container" id="indexPopupSlider">
+					<div class="team-member-popup__slider-wrapper swiper-wrapper">
+						<img src="assets/img/about-certificates__01.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__02.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__03.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__04.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__05.png" alt="" class="team-member-popup__slide swiper-slide">
+						<img src="assets/img/about-certificates__06.png" alt="" class="team-member-popup__slide swiper-slide">
+					</div>
+					<div class="swiper-pagination" id="indexPopupSliderPagination"></div>
+
+				</div>
+
+				<button class="team-member-popup__slider-prev" id="indexPopupSliderPaginationPrev">
+					<img src="assets/img/service-trip-arrow.svg" alt="" class="team-member-popup__slider-btn-icon">
+				</button>
+
+				<button class="team-member-popup__slider-next" id="indexPopupSliderPaginationNext">
+					<img src="assets/img/service-trip-arrow.svg" alt="" class="team-member-popup__slider-btn-icon">
+				</button>
+			</div>
+		</div>
+		<div class="team-member-popup__links">
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_01.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_02.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_03.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+			<a href="#" class="team-member-popup__link">
+				<img src="assets/img/team-member-popup__link_04.svg" alt="" class="team-member-popup__link-icon">
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="popup-box" data-popup-id="3">
+	<div class="popup team-member-popup">
+		<div class="team-member-popup__ph-box">
+			<img src="assets/img/team-member-popup__ph.png" alt="" class="team-member-popup__ph">
+		</div>
+		<div class="popup__close">
+			<img src="assets/img/popup-close.svg" alt="" class="team-member-popup__close-icon">
+		</div>
+		<div class="team-member-popup__title">
+			Инструктор 4
 		</div>
 		<div class="team-member-popup__subtitle">
 			PADI Master Scuba Diver инструктор
@@ -1258,19 +1469,25 @@
 		disableScroll();
 	}
 
-	const popupBox = document.querySelector('.popup-box');
-	const popupClose = popupBox.querySelector('.popup__close');
+	const popupBoxesNL = document.querySelectorAll('.popup-box');
+	const popupBoxes = Array.prototype.slice.call(popupBoxesNL);
 
-	// закрыть при клике на задний фон
-	popupBox.addEventListener('click', function(ev) {
-		if(ev.target === this) closeEl(popupBox);
+	popupBoxes.forEach(el => {
+
+		const popupClose = el.querySelector('.popup__close');
+		// закрыть при клике на задний фон
+		el.addEventListener('click', function(ev) {
+			if(ev.target === this) closeEl(el);
+		})
+
+
+		// закрыть при клике на крестик
+		popupClose.addEventListener('click', function() {
+			closeEl(el)
+		})
+		
 	})
 
-
-	// закрыть при клике на крестик
-	popupClose.addEventListener('click', function() {
-		closeEl(popupBox)
-	})
 
 	// находим всех участников, для которых будут открыты попапы
 	const membersNL = document.querySelectorAll('.index-team-list__item.index-team-list-item.swiper-slide')
@@ -1278,14 +1495,19 @@
 
 	// на каждого участника ставим листенер для открытия попапа
 	members.forEach(member => {
-		member.addEventListener('click', function() {
-			openEl(popupBox)
+		const id = member.getAttribute('data-popup-id')
+		console.log(id)
+		member.addEventListener('click', function(ev) {
+			const popup = document.querySelector(`.popup-box[data-popup-id="${id}"]`)
+			openEl(popup)
 		})
 	})
 
 </script>
 <!-- JS функции для открытия/закрытия модалок -->
-
+<script src="assets/lib/lightgallery/js/lightgallery.min.js"></script>
+<script src="assets/lib/lightgallery/js/lg-thumbnail.min.js"></script>
+<script src="assets/lib/lightgallery/js/lg-fullscreen.min.js"></script>
 <footer class="footer">
 	<div class="footer__bg-box">
 		<img src="assets/img/footer__bg.png" alt="" class="footer__bg">
@@ -1395,6 +1617,48 @@
 		</div>
 	</div>
 </footer>
+
+
+<div class="popup-box" id="callback-popup">
+	<form class="popup popup-review">
+		<div class="popup-review__header">
+			<div class="popup__title">
+				Обратный звонок
+			</div>
+			<button type="button" class="popup-review__close">
+				<img src="assets/img/popup-close.svg" alt="" class="popup-review__close-icon">
+			</button>
+		</div>
+		<div class="popup-review__body">
+			<div class="popup__text">
+				Помогите нам сделать сервис удобнее, для нас важен каждый комментарий!
+			</div>
+			<fieldset class="popup-review__fieldset">
+				<label>
+					<span>
+						ФИО*:
+					</span>
+					<input type="text" required>
+				</label>
+				<label>
+					<span>
+						Номер телефона*:
+					</span>
+					<input type="text" required>
+				</label>
+				<label>
+					<span>
+						Email:
+					</span>
+					<input type="text">
+				</label>
+			</fieldset>
+			<button class="popup__submit btn btn-blue">
+				Отправить
+			</button>
+		</div>
+	</form>
+</div>
 
 <script src="assets/lib/swiper/swiper-bundle.min.js"></script>
 

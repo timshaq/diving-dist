@@ -230,6 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   --black50: rgba(0, 36, 70, .5);
   --black10: rgba(0, 36, 70, .1);
   --blue: rgba(0, 96, 187, 1);
+  --blue50: rgba(0, 96, 187, .5);
   --border: rgba(51, 51, 51, .1);
   --gray-light: rgba(249, 249, 249, 1);
   --black-dark50: rgba(51, 51, 51, .5);
@@ -278,6 +279,14 @@ main {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .fix-box {
+    width: 546px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -900,10 +909,6 @@ label textarea {
   line-height: 22px;
 }
 
-.header__nav-a:hover {
-  color: var(--blue);
-}
-
 .header__tel {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1261,6 +1266,12 @@ label textarea {
   padding: 25px 8px 8px;
 }
 
+@media (min-width: 576px) {
+  .quest-box-card {
+    padding: 35px;
+  }
+}
+
 @media (min-width: 768px) {
   .quest-box-card {
     padding: 10px;
@@ -1362,10 +1373,23 @@ label textarea {
           align-items: center;
 }
 
+@media (min-width: 576px) {
+  .quest-box-card-label {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (min-width: 768px) {
   .quest-box-card-label {
     margin-top: auto;
     padding: 15px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1751,8 +1775,8 @@ label textarea {
 
 @media (min-width: 768px) {
   .index-hero__diver-box {
-    top: 50%;
-    left: 50%;
+    top: 42%;
+    left: 54%;
     width: 370px;
     height: 260px;
   }
@@ -1863,6 +1887,7 @@ label textarea {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
 .index-gallery__ph_first {
@@ -2273,6 +2298,10 @@ label textarea {
   .index-team-list__slider {
     overflow: visible;
   }
+}
+
+.index-team-list__item {
+  cursor: pointer;
 }
 
 .index-team-list .swiper-container {
@@ -2772,6 +2801,22 @@ label textarea {
   }
 }
 
+@media (min-width: 1370px) {
+  .index-places .swiper-slide-prev {
+    -webkit-transform: scale(0.6) translateX(30%);
+        -ms-transform: scale(0.6) translateX(30%);
+            transform: scale(0.6) translateX(30%);
+  }
+}
+
+@media (min-width: 1370px) {
+  .index-places .swiper-slide-next {
+    -webkit-transform: scale(0.6) translateX(-30%);
+        -ms-transform: scale(0.6) translateX(-30%);
+            transform: scale(0.6) translateX(-30%);
+  }
+}
+
 .index-places-slide {
   border-radius: 10px;
   overflow: hidden;
@@ -3083,6 +3128,12 @@ label textarea {
   opacity: 0;
   visibility: hidden;
   width: 290px;
+}
+
+@media (min-width: 576px) {
+  .index-train__content {
+    width: 546px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -3632,6 +3683,12 @@ label textarea {
   width: 290px;
 }
 
+@media (min-width: 576px) {
+  .services-places__content {
+    width: 546px;
+  }
+}
+
 @media (min-width: 768px) {
   .services-places__content {
     width: 708px;
@@ -3789,6 +3846,12 @@ label textarea {
   width: 290px;
 }
 
+@media (min-width: 576px) {
+  .services-train__content-box {
+    width: 546px;
+  }
+}
+
 @media (min-width: 768px) {
   .services-train__content-box {
     width: 708px;
@@ -3814,6 +3877,14 @@ label textarea {
   opacity: 1;
   visibility: visible;
   width: 100%;
+}
+
+.services-train__content {
+  display: none;
+}
+
+.services-train__content.active {
+  display: block;
 }
 
 @media (min-width: 1200px) {
@@ -3863,6 +3934,11 @@ label textarea {
           align-items: center;
   background-color: var(--white);
   box-shadow: 0px 0px 25px -3px rgba(46, 60, 80, 0.07);
+  border-radius: 10px;
+}
+
+.services-train-offer.active {
+  background-color: var(--blue50);
 }
 
 .services-train-offer__ph-box {
@@ -3870,20 +3946,23 @@ label textarea {
   height: 60px;
   min-width: 60px;
   min-height: 60px;
+  border-radius: 10px;
 }
 
 @media (min-width: 768px) {
   .services-train-offer__ph-box {
-    width: 90px;
-    height: 90px;
-    min-width: 90px;
-    min-height: 90px;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    min-height: 80px;
   }
 }
 
 .services-train-offer__ph {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .services-train-offer__name {
@@ -4870,6 +4949,12 @@ label textarea {
   margin-top: 30px;
 }
 
+@media (min-width: 576px) {
+  .contacts__map-box {
+    width: 546px;
+  }
+}
+
 @media (min-width: 768px) {
   .contacts__map-box {
     width: 768px;
@@ -4912,6 +4997,12 @@ label textarea {
     -webkit-transform: translate(-50%, -100%);
         -ms-transform: translate(-50%, -100%);
             transform: translate(-50%, -100%);
+  }
+}
+
+@media (min-width: 576px) {
+  .contacts__list {
+    width: 536px;
   }
 }
 
@@ -5373,6 +5464,7 @@ label textarea {
     padding-top: 0;
     padding-bottom: 0;
     border: none;
+    max-width: 90px;
   }
 }
 
@@ -5415,6 +5507,7 @@ label textarea {
     -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
+    max-width: 255px;
   }
 }
 
@@ -5423,6 +5516,8 @@ label textarea {
   height: 203px;
   border-radius: 10px;
   overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 768px) {
@@ -5433,6 +5528,8 @@ label textarea {
     -webkit-order: 3;
         -ms-flex-order: 3;
             order: 3;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -5716,6 +5813,7 @@ label textarea {
 .popup-box .popup-review {
   background-color: var(--gray-light);
   position: relative;
+  margin-top: 0;
 }
 
 @media (min-width: 768px) {
@@ -5725,6 +5823,18 @@ label textarea {
     height: -moz-fit-content;
     height: fit-content;
   }
+}
+
+.popup-box .popup-review__fieldset {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 767px) {
