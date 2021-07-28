@@ -521,22 +521,36 @@
       });
     }
 
-    const t = document.getElementById("servicesTrain");
+    const t = document.getElementById("servicesPlaces2");
 
     if (t) {
       const e = t.querySelectorAll(".tabs-box .tab"),
-            i = Array.prototype.slice.call(e),
-            c = t.querySelectorAll(".services-train__content-box"),
-            s = Array.prototype.slice.call(c);
-      i.forEach((e, t) => {
+            n = Array.prototype.slice.call(e),
+            i = t.querySelectorAll(".services-places__content"),
+            c = Array.prototype.slice.call(i);
+      n.forEach((e, t) => {
         e.addEventListener("click", function () {
-          i.forEach(e => e.classList.remove("tab-active")), e.classList.add("tab-active"), s.forEach(e => e.classList.remove("active")), s[t].classList.add("active");
+          n.forEach(e => e.classList.remove("tab-active")), e.classList.add("tab-active"), c.forEach(e => e.classList.remove("active")), c[t].classList.add("active");
+        });
+      });
+    }
+
+    const n = document.getElementById("servicesTrain");
+
+    if (n) {
+      const e = n.querySelectorAll(".tabs-box .tab"),
+            t = Array.prototype.slice.call(e),
+            c = n.querySelectorAll(".services-train__content-box"),
+            s = Array.prototype.slice.call(c);
+      t.forEach((e, n) => {
+        e.addEventListener("click", function () {
+          t.forEach(e => e.classList.remove("tab-active")), e.classList.add("tab-active"), s.forEach(e => e.classList.remove("active")), s[n].classList.add("active");
         });
       });
       const o = document.querySelector('.services-train__content-box[data-tab="1"]'),
             r = document.querySelector('.services-train__content-box[data-tab="2"]');
 
-      function n(e) {
+      function i(e) {
         const t = e.querySelectorAll(".services-train__offers-btn"),
               n = Array.prototype.slice.call(t),
               i = e.querySelectorAll(".services-train-content"),
@@ -550,7 +564,7 @@
         });
       }
 
-      n(o), n(r);
+      i(o), i(r);
     }
   };
 }, function (e, t, n) {

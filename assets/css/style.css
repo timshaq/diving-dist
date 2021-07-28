@@ -3722,6 +3722,16 @@ label textarea {
   }
 }
 
+.services-places__list .index-train-slide__title,
+.services-places__list .index-train-slide__p,
+.services-places__list .index-train-slide__price {
+  color: var(--black);
+}
+
+.services-places__list .index-train-slide {
+  background: none;
+}
+
 @media (min-width: 768px) {
   .services-places__all-link {
     display: none;
@@ -3937,8 +3947,8 @@ label textarea {
   border-radius: 10px;
 }
 
-.services-train-offer.active {
-  background-color: var(--blue50);
+.services-train-offer.active .services-train-offer__name {
+  color: var(--blue);
 }
 
 .services-train-offer__ph-box {
@@ -3947,6 +3957,18 @@ label textarea {
   min-width: 60px;
   min-height: 60px;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -3981,6 +4003,27 @@ label textarea {
     font-size: 18px;
     line-height: 29px;
   }
+}
+
+.services-train-offer__text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services-train-offer__date {
+  background-image: url("../img/calendar-blue.svg");
+  background-repeat: no-repeat;
+  margin-left: 15px;
+  padding-left: 30px;
+  margin-top: 15px;
+  text-align: left;
 }
 
 .services-train-content {
@@ -4198,6 +4241,11 @@ label textarea {
   .services-train-content__price {
     margin-left: 30px;
   }
+}
+
+.services-places-img {
+  width: 50px;
+  height: 50px;
 }
 
 @media (min-width: 1200px) {
