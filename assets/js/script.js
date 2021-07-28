@@ -3,12 +3,12 @@
 
   function n(i) {
     if (t[i]) return t[i].exports;
-    var c = t[i] = {
+    var s = t[i] = {
       i: i,
       l: !1,
       exports: {}
     };
-    return e[i].call(c.exports, c, c.exports, n), c.l = !0, c.exports;
+    return e[i].call(s.exports, s, s.exports, n), s.l = !0, s.exports;
   }
 
   n.m = e, n.c = t, n.d = function (e, t, i) {
@@ -29,9 +29,9 @@
     if (n.r(i), Object.defineProperty(i, "default", {
       enumerable: !0,
       value: e
-    }), 2 & t && "string" != typeof e) for (var c in e) n.d(i, c, function (t) {
+    }), 2 & t && "string" != typeof e) for (var s in e) n.d(i, s, function (t) {
       return e[t];
-    }.bind(null, c));
+    }.bind(null, s));
     return i;
   }, n.n = function (e) {
     var t = e && e.__esModule ? function () {
@@ -50,14 +50,14 @@
     function e(e, t, n) {
       const i = e;
       if (!i) return;
-      const c = window.matchMedia(`(min-width:${t}px)`);
-      let s;
+      const s = window.matchMedia(`(min-width:${t}px)`);
+      let c;
 
       const o = function () {
-        !0 !== c.matches ? !1 !== c.matches || (s = new Swiper(i, n)) : void 0 !== s && s.destroy(!0, !0);
+        !0 !== s.matches ? !1 !== s.matches || (c = new Swiper(i, n)) : void 0 !== c && c.destroy(!0, !0);
       };
 
-      c.addListener(o), o();
+      s.addListener(o), o();
     }
 
     const t = document.querySelectorAll(".services-places .services-places__content-box .swiper-container"),
@@ -77,8 +77,8 @@
       });
     });
     const i = document.querySelectorAll(".index-price .index-price__content-box .swiper-container"),
-          c = Array.prototype.slice.call(i);
-    c.length > 0 && c.forEach(t => {
+          s = Array.prototype.slice.call(i);
+    s.length > 0 && s.forEach(t => {
       e(t, 768, {
         breakpoints: {
           0: {
@@ -92,8 +92,8 @@
         }
       });
     });
-    const s = document.getElementById("articleAsideSlider");
-    s && e(s, 1200, {
+    const c = document.getElementById("articleAsideSlider");
+    c && e(c, 1200, {
       breakpoints: {
         0: {
           slidesPerView: 1.23,
@@ -131,8 +131,8 @@
       e.classList.add("open"), html.style.overflowX = "hidden", html.style.overflowY = "hidden";
     }
 
-    const c = document.querySelectorAll(".callback-btn");
-    Array.prototype.slice.call(c).forEach(t => {
+    const s = document.querySelectorAll(".callback-btn");
+    Array.prototype.slice.call(s).forEach(t => {
       t.addEventListener("click", function () {
         i(e);
       });
@@ -179,22 +179,22 @@
       const t = document.getElementById("indexHeroDiver"),
             n = document.getElementById("indexHeroFishLeft"),
             i = document.getElementById("indexHeroFishRight"),
-            c = 10,
-            s = 25,
+            s = 10,
+            c = 25,
             o = 15,
             r = .05;
-      let a = 0,
-          l = 0,
+      let l = 0,
+          a = 0,
           d = 0,
           u = 0;
       !function e() {
-        a += (d - a) * r, l += (u - l) * r, t.style.cssText = `transform: translate(${a / c - 50}%,${l / c - 50}%)`, n.style.cssText = `transform: translate(${-a / s}%,${-l / s}%)`, i.style.cssText = `transform: translate(${-a / o}%,${-l / o}%)`, requestAnimationFrame(e);
+        l += (d - l) * r, a += (u - a) * r, t.style.cssText = `transform: translate(${l / s - 50}%,${a / s - 50}%)`, n.style.cssText = `transform: translate(${-l / c}%,${-a / c}%)`, i.style.cssText = `transform: translate(${-l / o}%,${-a / o}%)`, requestAnimationFrame(e);
       }(), e.addEventListener("mousemove", function (t) {
         const n = e.offsetWidth,
               i = e.offsetHeight,
-              c = t.pageX - n / 2,
-              s = t.pageY - i / 2;
-        d = c / n * 100, u = s / i * 100;
+              s = t.pageX - n / 2,
+              c = t.pageY - i / 2;
+        d = s / n * 100, u = c / i * 100;
       });
     }
   };
@@ -208,10 +208,10 @@
       const t = e.querySelectorAll(".tabs-box .tab"),
             n = Array.prototype.slice.call(t),
             i = e.querySelectorAll(".services-places__content"),
-            c = Array.prototype.slice.call(i);
+            s = Array.prototype.slice.call(i);
       n.forEach((e, t) => {
         e.addEventListener("click", function () {
-          n.forEach(e => e.classList.remove("tab-active")), e.classList.add("tab-active"), c.forEach(e => e.classList.remove("active")), c[t].classList.add("active");
+          n.forEach(e => e.classList.remove("tab-active")), e.classList.add("tab-active"), s.forEach(e => e.classList.remove("active")), s[t].classList.add("active");
         });
       });
     }
@@ -289,12 +289,12 @@
       });
     }
 
-    const c = document.getElementById("indexTrain");
+    const s = document.getElementById("indexTrain");
 
-    if (c) {
-      const e = c.querySelectorAll(".tabs-box .tab"),
+    if (s) {
+      const e = s.querySelectorAll(".tabs-box .tab"),
             t = Array.prototype.slice.call(e),
-            n = c.querySelectorAll(".index-train__content"),
+            n = s.querySelectorAll(".index-train__content"),
             i = Array.prototype.slice.call(n);
       t.forEach((e, n) => {
         e.addEventListener("click", function () {
@@ -303,8 +303,8 @@
       });
     }
 
-    const s = document.querySelectorAll(".index-train .index-train__content-box .swiper-container"),
-          o = Array.prototype.slice.call(s);
+    const c = document.querySelectorAll(".index-train .index-train__content-box .swiper-container"),
+          o = Array.prototype.slice.call(c);
     o.length > 0 && o.forEach(e => {
       const t = e.querySelector(".swiper-pagination");
       new Swiper(e, {
@@ -359,12 +359,12 @@
       e.classList.remove("open"), html.style.overflowX = "hidden", html.style.overflowY = "scroll";
     }
 
-    function c(e) {
+    function s(e) {
       e.classList.add("open"), html.style.overflowX = "hidden", html.style.overflowY = "hidden";
     }
 
     t.addEventListener("click", function () {
-      c(e);
+      s(e);
     }), n.addEventListener("click", function () {
       i(e);
     }), e.addEventListener("click", function (t) {
@@ -513,10 +513,10 @@
       const t = e.querySelectorAll(".tabs-box .tab"),
             n = Array.prototype.slice.call(t),
             i = e.querySelectorAll(".services-places__content"),
-            c = Array.prototype.slice.call(i);
+            s = Array.prototype.slice.call(i);
       n.forEach((e, t) => {
         e.addEventListener("click", function () {
-          n.forEach(e => e.classList.remove("tab-active")), e.classList.add("tab-active"), c.forEach(e => e.classList.remove("active")), c[t].classList.add("active");
+          n.forEach(e => e.classList.remove("tab-active")), e.classList.add("tab-active"), s.forEach(e => e.classList.remove("active")), s[t].classList.add("active");
         });
       });
     }
@@ -527,44 +527,12 @@
       const e = t.querySelectorAll(".tabs-box .tab"),
             n = Array.prototype.slice.call(e),
             i = t.querySelectorAll(".services-places__content"),
-            c = Array.prototype.slice.call(i);
+            s = Array.prototype.slice.call(i);
       n.forEach((e, t) => {
         e.addEventListener("click", function () {
-          n.forEach(e => e.classList.remove("tab-active")), e.classList.add("tab-active"), c.forEach(e => e.classList.remove("active")), c[t].classList.add("active");
+          n.forEach(e => e.classList.remove("tab-active")), e.classList.add("tab-active"), s.forEach(e => e.classList.remove("active")), s[t].classList.add("active");
         });
       });
-    }
-
-    const n = document.getElementById("servicesTrain");
-
-    if (n) {
-      const e = n.querySelectorAll(".tabs-box .tab"),
-            t = Array.prototype.slice.call(e),
-            c = n.querySelectorAll(".services-train__content-box"),
-            s = Array.prototype.slice.call(c);
-      t.forEach((e, n) => {
-        e.addEventListener("click", function () {
-          t.forEach(e => e.classList.remove("tab-active")), e.classList.add("tab-active"), s.forEach(e => e.classList.remove("active")), s[n].classList.add("active");
-        });
-      });
-      const o = document.querySelector('.services-train__content-box[data-tab="1"]'),
-            r = document.querySelector('.services-train__content-box[data-tab="2"]');
-
-      function i(e) {
-        const t = e.querySelectorAll(".services-train__offers-btn"),
-              n = Array.prototype.slice.call(t),
-              i = e.querySelectorAll(".services-train-content"),
-              c = Array.prototype.slice.call(i);
-        n.forEach(t => {
-          const i = t.getAttribute("data-content-id");
-          t.addEventListener("click", function () {
-            const s = e.querySelector(`.services-train-content[data-content-id="${i}"]`);
-            c.forEach(e => e.classList.remove("active")), n.forEach(e => e.classList.remove("active")), s.classList.add("active"), t.classList.add("active");
-          });
-        });
-      }
-
-      i(o), i(r);
     }
   };
 }, function (e, t, n) {
@@ -574,17 +542,17 @@
 
   n.r(t);
   var i = n(7),
-      c = n(6),
-      s = n(8),
+      s = n(6),
+      c = n(8),
       o = n(0),
       r = n(9),
-      a = n(5),
-      l = n(2),
+      l = n(5),
+      a = n(2),
       d = n(4),
       u = n(1),
       p = n(3);
   document.addEventListener("DOMContentLoaded", function () {
-    Object(i.default)(), Object(c.default)(), Object(s.default)(), Object(o.default)(), Object(r.default)(), Object(a.default)(), Object(l.default)(), Object(d.default)(), Object(u.default)(), Object(p.default)();
+    Object(i.default)(), Object(s.default)(), Object(c.default)(), Object(o.default)(), Object(r.default)(), Object(l.default)(), Object(a.default)(), Object(d.default)(), Object(u.default)(), Object(p.default)();
     let e = document.getElementById("header").offsetHeight;
     document.documentElement.style.setProperty("--header-vh", e + "px");
   });

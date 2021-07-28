@@ -3850,9 +3850,6 @@ label textarea {
 }
 
 .services-train__content-box {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
   width: 290px;
 }
 
@@ -3880,13 +3877,6 @@ label textarea {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-}
-
-.services-train__content-box.active {
-  position: relative;
-  opacity: 1;
-  visibility: visible;
-  width: 100%;
 }
 
 .services-train__content {
